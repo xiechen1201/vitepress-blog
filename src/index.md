@@ -7,7 +7,7 @@ hero:
   text: ''
   tagline: '等风来不如追风去，生活中有太多的期待，你不必准备好再出发。'
   image:
-    src: /assets/imgs/avatar.jpg
+    src: /public/avatar.jpg
     alt: VitePress
   actions:
     - theme: brand
