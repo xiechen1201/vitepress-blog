@@ -4,15 +4,22 @@ import sidebar from './theme-config/sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Xie Chen's blog",
+  title: "有理想的",
 
   description: ' ',
+
+  // Markdown 配置
+  markdown: {
+    lineNumbers: true
+  },
 
   // 主题配置
   themeConfig: {
     nav,
 
     sidebar,
+
+    outline: 'deep',
 
     // 社交外链
     socialLinks: [
@@ -28,6 +35,6 @@ export default defineConfig({
     // 搜索
     search: {
       provider: 'local'
-    }
+    },
   }
 });

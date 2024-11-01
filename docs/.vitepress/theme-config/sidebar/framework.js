@@ -3,8 +3,8 @@ export default [
       text: 'Vue',
       collapsed: false,
       items: [
-        { text: 'One1', link: '/guide/one' },
-        { text: 'Two', link: '/guide/two' }
+        { text: '生命周期', link: '/page/framework/vue/life-cycle' },
+        { text: 'keep-alive 生命周期', link: '/page/framework/vue/keep-alive-life-cycle' }
       ]
     },
     {
