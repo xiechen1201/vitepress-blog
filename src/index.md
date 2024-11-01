@@ -7,23 +7,26 @@ hero:
   text: ''
   tagline: '等风来不如追风去，生活中有太多的期待，你不必准备好再出发。'
   image:
-    src: /public/avatar.jpg
+    src: /avatar.jpg
     alt: VitePress
   actions:
     - theme: brand
       text: 阅读文章
-      link: /markdown-examples
+      link: /page/framework
     - theme: alt
       text: 关于我
-      link: /api-examples
+      link: /page/about-me
 
 features:
   - title: 技术笔记
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    icon: 📒
+    details: 从基础到深入，剖析各种编程技术与工具，涵盖实用代码片段、最佳实践及高效开发技巧，分享阅读也方便自己。
   - title: 生活分享
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    icon: 🏃
+    details: 分享个人生活中的有趣见闻、旅行体验和实用生活小技巧，记录自己别样精彩的日常。
   - title: 持续更新
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    icon: 💪
+    details: 定期发布最新内容，保持活跃，不断积累实用的技术与生活干货。
 ---
 
 <style>
