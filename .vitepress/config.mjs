@@ -8,9 +8,9 @@ export default defineConfig({
 
   srcDir: 'src',
 
-  title: '有理想的',
+  title: '有理想',
 
-  description: ' ',
+  description: '',
 
   // Markdown 配置
   markdown: {

@@ -5,8 +5,8 @@
 // Detail: https://vitepress.dev/zh/reference/default-theme-nav
 export default [
   { text: '首页', link: '/' },
-  {
-    text: '网络与计算机',
+  /* {
+     text: '网络与计算机',
     link: '/page/network/index',
     activeMatch: '/page/network/'
   },
@@ -14,9 +14,9 @@ export default [
     text: '前端基础',
     link: '/page/hcj/index',
     activeMatch: '/page/hcj/'
-  },
+  }, */
   {
-    text: '框架',
+    text: '框架与跨端',
     link: '/page/framework/index',
     activeMatch: '/page/framework/'
   }

@@ -1,13 +1,13 @@
 export default [
-    {
-      text: 'Vue',
-      collapsed: false,
-      items: [
-        { text: '生命周期', link: '/page/framework/vue/life-cycle' },
-        { text: 'keep-alive 生命周期', link: '/page/framework/vue/keep-alive-life-cycle' }
-      ]
-    },
-    {
+  {
+    text: 'Vue',
+    collapsed: false,
+    items: [
+      { text: '生命周期', link: '/page/framework/vue/生命周期.md' },
+      { text: 'keep-alive 生命周期', link: '/page/framework/vue/keep-alive生命周期' }
+    ]
+  }
+  /* {
       text: 'React',
       collapsed: true,
       items: [
@@ -29,6 +29,5 @@ export default [
           ]
         }
       ]
-    }
-  ];
-  
+    } */
+];
