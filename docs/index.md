@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: '有理想'
-  text: ' '
-  tagline: '一个博客网站'
+  text: ''
+  tagline: '等风来不如追风去，生活中有太多的期待，你不必准备好再出发。'
   image:
     src: /assets/imgs/avatar.jpg
     alt: VitePress
@@ -18,49 +18,29 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
+  - title: 技术笔记
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: 生活分享
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 持续更新
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<!-- <div id='box' >
-  <img id='content' src="/assets/imgs/avatar.jpg" class="image-src tilt-content" />
-</div>
-
-<script setup>
-import { useTemplateRef, onMounted } from 'vue'
-
-onMounted(()=>{
-  let box = document.getElementById('box')
-  let img = document.getElementById('content')
- 
- box.addEventListener('mousemove', (e) => {
-    const boxWidth = box.offsetWidth;
-    const boxHeight = box.offsetHeight;
-
-    // 获取鼠标在元素内的相对位置
-    const x = e.offsetX;
-    const y = e.offsetY;
-
-    // 根据鼠标位置计算旋转角度
-    const rotateX = ((boxHeight / 2 - y) / boxHeight) * 50; // 沿 X 轴倾斜
-    const rotateY = ((x - boxWidth / 2) / boxWidth) * 50;   // 沿 Y 轴倾斜
-
-    // 设置 3D 旋转效果
-    img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  });
-})
-</script> -->
-
 <style>
+@keyframes blue-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(40, 69, 168, 0.2), 0 0 20px rgba(40, 69, 168, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(40, 69, 168, 0.8), 0 0 40px rgba(40, 69, 168, 0.6);
+  }
+}
+
 .image-src{
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  animation: blue-glow 1.5s infinite alternate;
 }
 </style>
