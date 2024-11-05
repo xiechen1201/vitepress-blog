@@ -4,7 +4,8 @@ export default [
     collapsed: false,
     items: [
       { text: '生命周期', link: '/page/framework/vue/生命周期.md' },
-      { text: 'keep-alive 生命周期', link: '/page/framework/vue/keep-alive生命周期' }
+      { text: 'keep-alive 生命周期', link: '/page/framework/vue/keep-alive生命周期' },
+      { text: 'Key 的本质', link: '/page/framework/vue/Key的本质' }
     ]
   }
   /* {

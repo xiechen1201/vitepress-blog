@@ -14,15 +14,29 @@ export default defineConfig({
 
   // Markdown 配置
   markdown: {
-    lineNumbers: true
+    // 代码块主题
+    // theme: 'night-owl',
+
+    // 代码块行号
+    lineNumbers: true,
+
+    // 高亮块文字
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '信息',
+      detailsLabel: '详细信息'
+    }
   },
 
-  // 主题配置
+  // 默认主题配置
   themeConfig: {
     nav,
 
     sidebar,
 
+    // 要显示标题大纲的层级
     outline: 'deep',
 
     // 社交外链
