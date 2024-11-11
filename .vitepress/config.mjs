@@ -15,7 +15,7 @@ export default defineConfig({
   // Markdown 配置
   markdown: {
     // 代码块主题
-    // theme: 'night-owl',
+    theme: 'night-owl',
 
     // 代码块行号
     lineNumbers: true,
