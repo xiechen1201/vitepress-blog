@@ -1,8 +1,8 @@
 /**
- * @fileoverview 导航栏配置
+ * @fileoverview 顶部导航栏配置
+ * Detail: https://vitepress.dev/zh/reference/default-theme-nav
  */
 
-// Detail: https://vitepress.dev/zh/reference/default-theme-nav
 export default [
   { text: '首页', link: '/' },
   /* {
@@ -16,8 +16,13 @@ export default [
     activeMatch: '/page/hcj/'
   }, */
   {
+    text: 'Typescript',
+    activeMatch: '/page/typescript/',
+    link: '/page/typescript/index'
+  },
+  {
     text: '框架与跨端',
-    link: '/page/framework/index',
-    activeMatch: '/page/framework/'
+    activeMatch: '/page/(vue|react)/',
+    items: [{ text: 'Vue', link: '/page/vue/index' }]
   }
 ];

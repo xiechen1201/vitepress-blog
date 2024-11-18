@@ -3,7 +3,14 @@
  * @description https://vitepress.dev/zh/guide/extending-default-theme
  */
 
-import DefaultTheme from 'vitepress/theme'
-import './custom.css'
+import DefaultTheme from 'vitepress/theme';
+import './custom.css';
 
-export default DefaultTheme
+import XTextLight from './components/XTextLight.vue';
+
+export default {
+  extends: DefaultTheme,
+  enhanceApp({ app }) {
+    app.component('XTextLight', XTextLight);
+  }
+};

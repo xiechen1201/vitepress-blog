@@ -1,3 +1,8 @@
+/***
+ * @fileoverview 配置文件
+ * @description https://vitepress.dev/zh/reference/site-config
+ */
+
 import { defineConfig } from 'vitepress';
 import nav from './theme-config/nav';
 import sidebar from './theme-config/sidebar';
@@ -13,6 +18,8 @@ export default defineConfig({
   description: '',
 
   // Markdown 配置
+  // 详见：https://vitepress.dev/zh/reference/site-config#markdown
+  // MarkdownOption：https://github.com/vuejs/vitepress/blob/main/src/node/markdown/markdown.ts#L50
   markdown: {
     // 代码块主题
     theme: 'night-owl',
