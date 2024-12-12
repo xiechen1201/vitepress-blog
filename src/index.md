@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 阅读文章
-      link: /page/framework
+      link: /page/home
     - theme: alt
       text: 关于我
       link: /page/about-me
