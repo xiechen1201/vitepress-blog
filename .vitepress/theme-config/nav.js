@@ -5,16 +5,6 @@
 
 export default [
   { text: '首页', link: '/' },
-  /* {
-     text: '网络与计算机',
-    link: '/page/network/index',
-    activeMatch: '/page/network/'
-  },
-  {
-    text: '前端基础',
-    link: '/page/hcj/index',
-    activeMatch: '/page/hcj/'
-  }, */
   {
     text: 'Typescript',
     activeMatch: '/page/typescript/',
