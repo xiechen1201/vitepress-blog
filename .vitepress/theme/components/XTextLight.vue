@@ -1,24 +1,23 @@
 <template>
-  <span class="text-highlight">
-    <slot></slot>
-  </span>
+    <span class="text-highlight">
+        <slot></slot>
+    </span>
 </template>
 
-<script setup></script>
 
-<style lang="scss">
+<style>
 :root {
-  --text-highlight-color: #f9edc7;
+    --text-highlight-color: #f9edc7;
 }
 
-// drak mode
+/* drak mode */
 html.dark {
-  --text-highlight-color: #fb8c00;
+    --text-highlight-color: #fb8c00;
 }
 
 .text-highlight {
-  background-color: var(--text-highlight-color);
-  color: var(--vp-c-text-1);
-  font-weight: bolder;
+    background-color: var(--text-highlight-color);
+    color: var(--vp-c-text-1);
+    font-weight: bolder;
 }
 </style>
