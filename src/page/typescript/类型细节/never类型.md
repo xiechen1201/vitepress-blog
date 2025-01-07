@@ -8,7 +8,7 @@ type A = string & number; // never
 
 而`never`才是一个“什么都没有”的类型，它甚至不包括空的类型，严格来说`never`类型不携带任何的类型信息。
 
-
+<br />
 
 例如下面的联合类型：
 
@@ -19,7 +19,7 @@ type Foo = string | number | boolean | undefined | null | void | never;
 
 我们把常见的基础类型都放在这个联合类型中，但是 TS 推导出来的类型却没有`never`类型了，被直接无视了。
 
-在 TS 类型系统中，`never`是整个类型系统中最底层的类型。如果说`any`，`unknown`是每个其他类型的父类型。那么`never`就是每个其他类型的子类型。**<font style="background-color:#F9EFCD;">这意味着，</font>**`**<font style="background-color:#F9EFCD;">never</font>**`**<font style="background-color:#F9EFCD;">类型可以赋值给其他任何类型，但是反过来，却行不通。</font>**
+在 TS 类型系统中，`never`是整个类型系统中最底层的类型。如果说`any`，`unknown`是每个其他类型的父类型。那么`never`就是每个其他类型的子类型。<XTextLight>这意味着，`never`类型可以赋值给其他任何类型，但是反过来，却行不通。</XTextLight>
 
 ```typescript
 let neverValue: never = undefined as never;
@@ -81,14 +81,13 @@ function request(url: string, method: Method) {
 
 这样就可以把错误扼杀在摇篮里。
 
-<br/>tips
-❕信息
+::: tip
 
 这种方式也叫做「穷举式检查」，积极的对不期望的情况进行错误处理，在编译时就捕获未处理的情况，而不是默默地忽略它们。
 
-<br/>
+:::
 
-
+<br />
 
 还有些情况使用`never`类型确实是符合逻辑的，例如一个只负责抛出错误的函数：
 

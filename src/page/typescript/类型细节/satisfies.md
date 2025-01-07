@@ -33,7 +33,7 @@ const elgacyAs = {} satisfies IConfig; // ❌ 类型 "{}" 中缺少属性 "a"，
 console.log(elgacyAs.a); // ❌ 类型“{}”上不存在属性“a”
 ```
 
-
+<br />
 
 另外`satisfies`比`as`也更加的智能，它可以自动帮我们推断出声明的类型，而不是联合类型：
 
@@ -54,7 +54,7 @@ const currentWithValue3 = { a: 2 } satisfies IConfig;
 currentWithValue3.a.toFixed(); // ✅ 可以正常提示
 ```
 
-
+<br />
 
 再比如在某些映射类型中，编辑器不会出现任何的属性提示：
 
@@ -74,9 +74,8 @@ type MyElement = {
 
 ![](imgs/1732694020820-02904e81-eb20-4bf0-91ef-a2b25a21fda6.png)
 
-
+<br />
 
 但是如果使用的是`satisfies`就会非常的智能：
 
 ![](imgs/1732694055724-ec7f393c-9b10-40f9-b65f-b52916391092.png)
-

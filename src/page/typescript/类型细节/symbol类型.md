@@ -23,7 +23,7 @@ for (let key in obj) {
 }
 ```
 
-
+<br />
 
 定义一个`symbol`类型的数据：
 
@@ -33,7 +33,7 @@ let c = Symbol('a'); // typeof c
 c = 123; // ❌ 不能将类型“number”分配给类型“symbol”
 ```
 
-
+<br />
 
 如果使用`const`声明的`symbol`将会是`unique symbol`类型：
 
@@ -41,7 +41,7 @@ c = 123; // ❌ 不能将类型“number”分配给类型“symbol”
 const c = Symbol('a'); // typeof c
 ```
 
-
+<br />
 
 当显式的定义`unique symbol`的时候必须使用`const`关键字：
 
@@ -50,7 +50,7 @@ const d: unique symbol = Symbol('a'); // typeof d
 let e: unique symbol = Symbol('a'); // ❌ unique symbol的变量必须为const
 ```
 
-
+<br />
 
 不要将两个`symbol`类型的数据进行比较，因为是没有意义的：
 

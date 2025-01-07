@@ -1,4 +1,5 @@
-## <font style="background-color:#74B602;"> </font> any 类型
+##  any 类型
+
 在 TS 中，编译的时候一定要有类型，如果 TS 无法确定一个变量的类型是什么，则默认为`any`类型。这就是兜底的类型，相当于回归于 JS 的弱类型状态，是 TS 中所有类型的“教父”。
 
 ```typescript
@@ -13,7 +14,7 @@ let c = a + b;
 
 但是如何显式的声明了为`any`类型，就不会报错了，也就说和 JS 的处理是一模一样的。
 
-
+<br />
 
 如果要使用`any`通常要显式的定义，否则如果是 TS 推导出来的某些情况下就会报错：
 
@@ -25,16 +26,15 @@ let foo; // ✅
 function func(foo, bar) { } // ❌参数“foo”隐式具有“any”类型
 ```
 
-<br/>warning
-🔔 提示
+::: tip
 
 默认情况下，Typescript 是宽容的，在推导出类型为`any`时其实不会报错，如果在 tsconfig.json 中启用了`noImplcitAny`标志，就会遇到隐式`any`类型时报错。
 
 `noImplcitAny`隶属于 TSC 的`strict`标志家族，如果已经在 tsconfig.json 中启用了`strict`，那就不需要专门设置`noImplcitAny`标志了，效果是一样的。
 
-<br/>
+:::
 
-
+<br />
 
 如果给函数的参数显式的定义为`any`类型则不会错误：
 
@@ -42,7 +42,7 @@ function func(foo, bar) { } // ❌参数“foo”隐式具有“any”类型
 function func(foo: any, bar: any) {} // ✅
 ```
 
-
+<br />
 
 总的来说，`any`类型就是回归到了 JS 的原始状态，不会进行任何的类型检查，可以进行任何的操作，包括赋值、访问、方法调用等等，这样就丢失了 TS 的优势。
 
@@ -54,12 +54,11 @@ anyVar.foo.bar.fn();
 anyVar[0][1][2].prop;
 ```
 
+## unknown 类型
 
-
-## <font style="background-color:#74B602;"> </font> unknown 类型
 在一些情况下，如果确实无法预知一个值的类型，不要使用`any`类型，更合理的是使用`unknown`类型。
 
-`unknown`类型也表示任何值。`<font style="color:#0e0e0e;">unknown</font>`<font style="color:#0e0e0e;">就像</font>`<font style="color:#0e0e0e;">any</font>`<font style="color:#0e0e0e;">一样，能够被赋值为任意类型的值：</font>
+`unknown`类型也表示任何值。`unknown`就像`any`一样，能够被赋值为任意类型的值：
 
 ```typescript
 let value: unknown;
@@ -92,7 +91,7 @@ anyVar = value; // ✅
 unknownVar = value; // ✅
 ```
 
-
+<br />
 
 如果想要把`unknown`类型赋值给其他的类型，需要进行类型检查或者类型的断言：
 
@@ -104,7 +103,7 @@ if (typeof value === "string") {
 num = value as number; // ✅ 使用类型断言
 ```
 
-
+<br />
 
 简单来说，`any`放弃了所有的类型检查，而`unknown`并没有。
 
@@ -117,4 +116,3 @@ unknownFn.foo(); // ❌ 对象的类型为"unknown"
 ```
 
 所以，在未知的情况下更推荐使用的是`unknown`类型。
-

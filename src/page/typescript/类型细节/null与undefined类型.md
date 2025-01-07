@@ -4,15 +4,13 @@
 
 我们在写 JavaScript 的时候，这两个在语义上也有细微的差别，`undefined`一般表示尚未定义的，`null`则表示缺少值。
 
-<br/>warning
-⚠️ 注意
+::: warning
 
 `null`和`undefined`在没有开启`strictNullChecks: true`的严格检查情况下，它们会被视作为其他类型的子类型，例如`string`类型则会被认为包含了`null`和`undefined`。
 
 tsconfig.json 中设置了`strict:true`默认开启，如果想关闭，可以设置`strictNullChecks:false`。
 
-<br/>
-
+:::
 
 
 例如定义`undefined`和`null`类型的数据：
@@ -24,7 +22,7 @@ const temp1: undefined = undefined;
 const temp2: null = null;
 ```
 
-
+<br />
 
 在`strict:true`或者`strictNullChecks: true`的情况下，`null`和`undefined`不能赋值给其他类型：
 
@@ -58,7 +56,7 @@ function getStr(): string {
 let temp5: string | null = null; // ✅
 ```
 
-
+<br />
 
 在使用`let`声明一个值为`null`的变量的时候，如果没有指定类型，则推导类型为`any`:
 
@@ -70,4 +68,3 @@ let temp6 = undefined;
 let temp7 = null;
 temp7 = 123; // ✅
 ```
-

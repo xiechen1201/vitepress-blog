@@ -1,4 +1,5 @@
-## <font style="background-color:#74B602;"> </font> instanceof 实例判断
+##   instanceof 实例判断
+
 `typeof`只能够判断`"string"`/`"number"`/`"boolean"`/`"function"`/`"object"`等值，如果遇到了具体的对象类型判断就无能为力了，因此可以使用`instanceof`关键字，它可以来判断一个对象是否是某个构造函数的实例：
 
 ```typescript
@@ -38,9 +39,7 @@ function feedAnimal(animal: Animal) {
 }
 ```
 
-
-
-## <font style="background-color:#74B602;"> </font> in 属性检查
+##   in 属性检查
 在`JavaScript`中，`in`运算符用来确定对象是否包含某个属性：
 
 ```javascript
@@ -51,7 +50,7 @@ if ('a' in obj) {
 }
 ```
 
-
+<br />
 
 在 TypeScript 中，`in`检查对象是否具有特定的属性，并使用该属性区分不同的类型。它通常返回一个布尔属性，表示该属性是否存在于该对象中：
 
