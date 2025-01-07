@@ -1,0 +1,43 @@
+[
+    {
+        "text": "Typescript的概述"
+    },
+    {
+        "text": "搭建TS的环境"
+    },
+    {
+        "text": "快速入门"
+    },
+    {
+        "text": "类型声明文件"
+    },
+    {
+        "text": "类型细节",
+        "items": [
+            { "text": "类型系统" },
+            { "text": "any和unknown类型" },
+            { "text": "boolean与字面量类型" },
+            { "text": "number、bigint与string类型" },
+            { "text": "symbol类型" },
+            { "text": "类型拓宽" },
+            { "text": "null与undefined类型" },
+            { "text": "void类型" },
+            { "text": "对象字面量类型" },
+            { "text": "类型别名和接口" },
+            { "text": "结构化类型" },
+            { "text": "装箱类型和拆箱类型" },
+            { "text": "联合类型" },
+            { "text": "交叉类型" },
+            { "text": "控制流分析和typeof" },
+            { "text": "instanceof与in" },
+            { "text": "字面量类型检查" },
+            { "text": "自定义守卫" },
+            { "text": "never类型" },
+            { "text": "数组和元组" },
+            { "text": "方括号运算符" },
+            { "text": "类型断言" },
+            { "text": "satisfies" },
+            { "text": "枚举类型" }
+        ]
+    }
+]
