@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const directoryPath = path.join(__dirname, "../page/typescript/函数与泛型");
+const directoryPath = path.join(__dirname, "../page/typescript/类和接口");
 
 readDirectory(directoryPath);
 
