@@ -5,6 +5,9 @@
 ## Git 提交规范
 
 ```
+
+<!-- 业务代码相关 -->
+
 - feat: 新功能（feature）
 
 - fix: 修复 bug
@@ -19,11 +22,15 @@
 
 - test: 添加测试或修改现有测试
 
+<!-- 构建相关 -->
+
 - chore: 构建过程或辅助工具的变动，不影响代码逻辑（如构建配置修改）
 
 - ci: CI 配置相关的修改
 
 - build: 构建系统或外部依赖的修改（如升级 npm 包）
+
+<!-- Git 相关 -->
 
 - revert: 回滚某个之前的 commit
 
@@ -31,21 +38,6 @@
 ```
 
 ## 项目结构
-
-```
-- .github #配置文件
-- .vitepress #配置文件
-- src #源文件目录
-    - assets #全局静态资源
-    - page
-        - typescript
-        - vue
-        - web-developer-base
-    - public #静态资源，不会被 vitepress 处理
-    - index.html
-- .gitignore
-- package.json
-```
 
 ```
 .
