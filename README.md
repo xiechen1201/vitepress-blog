@@ -46,3 +46,18 @@
 - .gitignore
 - package.json
 ```
+
+```
+.
+├── .github         # Github 配置文件
+├── .vitepress      # Vitepress 配置文件
+├── README.md
+├── package-lock.json
+├── package.json
+└── src
+    ├── assets
+    ├── index.md     # 首页
+    ├── public       # 静态资源
+    ├── page         # 页面目录
+    └── utils        # 工具函数
+```
