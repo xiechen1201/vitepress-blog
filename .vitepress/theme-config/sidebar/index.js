@@ -7,11 +7,19 @@ import { generateSidebar } from "../utils/index";
 import network from "./network";
 import vue from "./vue";
 
-const typescriptPath = path.join(__dirname, "../../../src/page/typescript");
+function getSidebar(directoryName) {
+    const directoryPath = path.join(
+        __dirname,
+        "../../../src/page/",
+        directoryName
+    );
+    return generateSidebar(directoryPath);
+}
 
 // Detail: https://vitepress.dev/zh/reference/default-theme-sidebar
 export default {
-    "/page/typescript/": generateSidebar(typescriptPath),
+    "/page/engineering/": getSidebar('engineering'),
+    "/page/typescript/": getSidebar('typescript'),
     "/page/vue/": vue,
     "/page/network/": network
 };

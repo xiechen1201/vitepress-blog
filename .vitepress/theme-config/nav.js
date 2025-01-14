@@ -4,15 +4,20 @@
  */
 
 export default [
-  { text: '首页', link: '/' },
-  {
-    text: 'Typescript',
-    activeMatch: '/page/typescript/',
-    link: '/page/typescript/index'
-  },
-  {
-    text: '框架与跨端',
-    activeMatch: '/page/(vue|react)/',
-    items: [{ text: 'Vue', link: '/page/vue/index' }]
-  }
+    { text: "首页", link: "/" },
+    {
+        text: "工程化",
+        activeMatch: "/page/engineering/",
+        link: "/page/engineering/index"
+    },
+    {
+        text: "Typescript",
+        activeMatch: "/page/typescript/",
+        link: "/page/typescript/index"
+    },
+    {
+        text: "框架与跨端",
+        activeMatch: "/page/(vue|react)/",
+        items: [{ text: "Vue", link: "/page/vue/index" }]
+    }
 ];
