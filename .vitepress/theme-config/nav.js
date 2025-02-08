@@ -4,7 +4,11 @@
  */
 
 export default [
-    { text: "首页", link: "/" },
+    {
+        text: "首页",
+        activeMatch: "/page/home/",
+        link: "/page/home/index"
+    },
     {
         text: "工程化",
         activeMatch: "/page/engineering/",

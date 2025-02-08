@@ -16,9 +16,6 @@ hero:
     - theme: alt
       text: 关于我
       link: /page/about-me
-    - theme: alt
-      text: ↗️ 问题讨论
-      link: https://github.com/xiechen1201/vitepress-blog/issues
 
 features:
   - title: 技术笔记

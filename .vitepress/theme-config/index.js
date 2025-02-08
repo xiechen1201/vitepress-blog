@@ -2,12 +2,19 @@ import nav from "./nav";
 import sidebar from "./sidebar";
 
 export default {
+    // 顶部导航栏
     nav,
 
+    // 侧边栏
     sidebar,
 
     // 要显示标题大纲的层级
     outline: "deep",
+
+    // 搜索
+    search: {
+        provider: "local"
+    },
 
     // 社交外链
     socialLinks: [
@@ -18,10 +25,5 @@ export default {
             },
             link: "https://www.yuque.com/xiechen"
         }
-    ],
-
-    // 搜索
-    search: {
-        provider: "local"
-    }
+    ]
 };
