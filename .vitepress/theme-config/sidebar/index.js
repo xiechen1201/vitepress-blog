@@ -12,7 +12,6 @@ function getSidebar(directoryName) {
         "../../../src/page/",
         directoryName
     );
-    console.log(generateSidebar)
     return generateSidebar(directoryPath);
 }
 
