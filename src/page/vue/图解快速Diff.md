@@ -73,7 +73,7 @@ for (let i = newStartIdx; i <= newEndIdx; i++) {
 
 示意图：
 
-![alt text](2024-09-17-004920.png)
+![alt text](./imgs/2024-09-17-004920.png)
 
 总结，`keyToNewIndexMap`存储的就是所有「未处理」的「新节点」的 Key 和 Index 的映射关系。
 
@@ -90,7 +90,7 @@ const newIndexToOldIndexMap = new Array(toBePatched).fill(0);
 
 示意图：
 
-![alt text](2024-09-17-064415.png)
+![alt text](./imgs/2024-09-17-064415.png)
 
 
 之所以一开始都初始化为 0，就是为了一开始假设所有的新节点都不存在于旧节点列表中，之后再对这个数组进行更新，如果更新完之后某项还是 0，那就表示这一位对应的新节点在旧节点中不存在。
@@ -173,7 +173,7 @@ for (let i = oldStartIdx; i <= oldEndIdx; i++) {
 
 + `i=3`：`[0, 2, 3, 4, 1, 0]`；
 
-![alt text](2024-09-17-065254.png)
+![alt text](./imgs/2024-09-17-065254.png)
 
 经过遍历旧节点列表这一操作之后，`newIndexToOldIndexMap`列表就被更新了，里面存储了每个新节点在在旧节点列表中的位置。不过需要注意的是，这个索引位置是 +1 的，更新后如果某一项依然 0，说明这个新节点在旧节点中是存在的。
 
@@ -261,7 +261,7 @@ Vue3 内部在计算最长递增子序列的时候，返回的是原始对应的
 因为之前更改`newIndexToOldIndex`数组的时候，索引是 +1 的，这样计算出的结果就正好抵消了前面 +1 的操作，得到了真正的索引数组。
 :::
 
-![](https://cdn.nlark.com/yuque/0/2025/png/209060/1739416998470-5c5f2ab1-fdda-42ab-88dc-2b85deb84d58.png)
+![alt text](./imgs/image.png)
 
 ### 5、移动和挂载节点
 
