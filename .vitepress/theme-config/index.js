@@ -18,6 +18,10 @@ export default {
 
     // 社交外链
     socialLinks: [
+        {
+            icon: "vitepress",
+            link: "https://vitepress.dev/zh/"
+        },
         { icon: "github", link: "https://github.com/xiechen1201" },
         {
             icon: {

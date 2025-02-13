@@ -17,6 +17,8 @@ export default defineConfig({
     
     srcDir: "src",
 
+    outDir: "dist",
+
      // 默认主题配置
      themeConfig,
 
